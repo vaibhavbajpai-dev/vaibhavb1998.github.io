@@ -6,6 +6,8 @@
 /* html starts */
 html {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 /* html ends */
@@ -300,7 +302,6 @@ body {
 .contact-area {
   min-height: 100vh;
   padding-top: 15vh;
-  max-width: 1200px;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -315,10 +316,8 @@ body {
 }
 
 .container1 {
-  width: 900px;
   margin: 10rem auto;
-  display: flex;
-  justify-content: space-between;
+
 }
 
 .main-area .contact-area .container1 .box {
