@@ -1,0 +1,9 @@
+@media only screen and (max-width: 340px) {
+
+  .banner-area,
+  .about-area,
+  .skills-area,
+  .contact-area {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hind:600&display=swap');
+
+
+/* html starts */
+html {
+  scroll-behavior: smooth;
+}
+
+/* html ends */
+
+/* body starts */
+
+body {
+  background: #000000 !important;
+}
+
+/* body ends */
+
+/* navbar starts */
+
+.header-area .main-menu .navbar .navbar-brand {
+  color: #eee;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  padding: 0 2rem 0 5rem;
+  font-weight: 900;
+}
+
+.header-area .main-menu .navbar-fixed-custom {
+  background: #ccc;
+}
+
+.header-area .main-menu .navbar-fixed-custom .navbar-brand {
+  color: black;
+}
+
+.header-area .main-menu .navbar-fixed-custom .nav-item .nav-link {
+  color: black !important;
+}
+
+.header-area .main-menu .navbar-fixed-custom .nav-item .nav-link:hover {
+  color: blue !important;
+}
+
+.header-area .main-menu .navbar {
+  padding: 1rem 7rem;
+}
+
+.header-area .main-menu .navbar .nav-item .nav-link {
+  text-transform: capitalize;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+.header-area .main-menu li {
+  padding: 0 1rem;
+}
+
+.header-area .main-menu .navbar .nav-item .nav-link:hover {
+  color: #ffc107;
+  transition: 500ms;
+}
+
+/* navbar ends */
+
+/* main area starts */
+/* banner area starts */
+
+.main-area .banner-area {
+  min-height: 90vh;
+}
+
+.main-area .banner-area .banner-msg-area {
+  padding-top: 15vh;
+}
+
+.main-area .banner-area .line-1 {
+  color: #ffbd39;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.main-area .banner-area .line-2 {
+  color: #ffc107ec;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.main-area .banner-area .banner-highlighted-text {
+  color: #fff;
+}
+
+
+.main-area .banner-area .line-3 {
+  color: #fff;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+.main-area .banner-area .banner-btn-area {
+  margin-top: 2rem;
+  font-family: 'Teko', sans-serif;
+  font-size: 30px;
+}
+
+.main-area .banner-area .banner-msg-area .hire-me-btn {
+  border-radius: 2px;
+  outline: 0;
+  background: #ffbd39;
+  color: black;
+  border: 1px solid #ffbd39;
+  text-transform: uppercase;
+  margin-right: 1.5rem;
+  padding: 0.1rem 0.8rem;
+}
+
+.main-area .banner-area .banner-msg-area .hire-me-btn:hover {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  transition: 500ms;
+}
+
+.main-area .banner-area .banner-msg-area .resume-btn {
+  border-radius: 3px;
+  outline: 0;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  text-transform: uppercase;
+  padding: 0.1rem 0.8rem;
+}
+
+.main-area .banner-area .banner-msg-area .resume-btn:hover {
+  background: #ffbd39;
+  color: black;
+  border: 1px solid #ffbd39;
+  transition: 500ms;
+}
+
+.main-area .banner-area .banner-img {
+  height: 30rem;
+  width: 35rem;
+  margin-top: 1.2rem;
+}
+
+/* banner area ends */
+
+/* about-me area starts */
+
+.main-area .about-area {
+  min-height: 100vh;
+  padding-top: 15vh;
+}
+
+.main-area .about-area .about-me-img {
+  height: 30rem;
+  width: 35rem;
+}
+
+.main-area .about-area .about-info-area {
+  margin-top: 8vh;
+}
+
+.main-area .about-area .about-info-area .about-me-heading {
+  color: #ffbd39cc;
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 5px 6px rgba(170, 170, 170, 0.219);
+  text-align: center;
+}
+
+.main-area .about-area .about-info-area .about-me-info {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  padding: 1rem 2.5rem;
+  text-align: center;
+}
+
+.main-area .about-area .about-info-area .about-me-highlighted-text {
+
+  color: yellow;
+}
+
+.main-area .about-area .about-info-area .about-me-highlighted-text:hover {
+  color: #ffbd39;
+  transition: 1s;
+  cursor: pointer;
+}
+
+/* about-me area ends */
+
+/* resume-area starts */
+.resume-area {
+  min-height: 100vh;
+  padding-top: 15vh;
+}
+
+.main-area .resume-area .resume-area-heading {
+  color: #ffbd39cc;
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 5px 6px rgba(170, 170, 170, 0.219);
+  text-align: center;
+}
+
+/* resume-area ends */
+
+/* skills-area starts */
+.main-area .skills-area {
+  min-height: 100vh;
+  padding-top: 15vh;
+}
+
+.main-area .skills-area .skills-area-heading {
+  color: #ffbd39cc;
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 5px 6px rgba(170, 170, 170, 0.219);
+  text-align: center;
+}
+
+.main-area .skills-area .skills-bar-heading,
+.skills-bar-percent {
+  color: white;
+  font-family: 'Hind', sans-serif;
+  font-size: 1.6rem;
+  display: inline;
+}
+
+.skills-bar-percent {
+  float: right;
+}
+
+.main-area .skills-area .skills-bar {
+  content: '';
+  height: 12px;
+  width: 100%;
+  background: rgba(170, 170, 170, 0.192);
+  border-radius: 3px;
+}
+
+.main-area .skills-area .skills-bar .skills-bar-fill-1,
+.skills-bar-fill-2,
+.skills-bar-fill-3,
+.skills-bar-fill-4,
+.skills-bar-fill-5,
+.skills-bar-fill-6 {
+  content: '';
+  height: 12px;
+  background: #ffbd39;
+  border-radius: 3px;
+}
+
+.main-area .skills-area .skills-bar .skills-bar-fill-1 {
+  width: 80%;
+}
+
+.main-area .skills-area .skills-bar .skills-bar-fill-2 {
+  width: 70%;
+}
+
+.main-area .skills-area .skills-bar .skills-bar-fill-3 {
+  width: 80%;
+}
+
+.main-area .skills-area .skills-bar .skills-bar-fill-4 {
+  width: 90%;
+}
+
+.main-area .skills-area .skills-bar .skills-bar-fill-5 {
+  width: 50%;
+}
+
+.main-area .skills-area .skills-bar .skills-bar-fill-6 {
+  width: 50%;
+}
+
+/* skills-area ends */
+
+/* contact area starts */
+
+.contact-area {
+  min-height: 100vh;
+  padding-top: 15vh;
+  max-width: 1200px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-area-heading {
+  color: #ffbd39cc;
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 5px 6px rgba(170, 170, 170, 0.219);
+  text-align: center;
+}
+
+.container1 {
+  width: 900px;
+  margin: 10rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-area .contact-area .container1 .box {
+  text-align: center;
+}
+
+.main-area .contact-area .container1 .box .icon .fa {
+  font-size: 80px;
+  cursor: pointer;
+}
+
+.main-area .contact-area .container1 .box .icon h4,
+.main-area .contact-area .container1 .box .icon h3 {
+  position: relative;
+  overflow: hidden;
+  font-weight: 400;
+  margin: 0;
+  padding: 2px 5px;
+  font-size: 24px;
+  transition-delay: 0.3333s;
+  color: transparent;
+}
+
+.main-area .contact-area .container1 .box .fa:hover~h4,
+.main-area .contact-area .container1 .box .fa:hover~h3 {
+  color: white;
+}
+
+
+.main-area .contact-area .container1 .box .icon h4 {
+  font-weight: 600;
+  margin: 5px 0;
+  font-size: 30px;
+}
+
+.main-area .contact-area .container1 .box .icon h4:before,
+.main-area .contact-area .container1 .box .icon h3:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background: #00bcd4;
+  transition: 1s;
+}
+
+.main-area .contact-area .container1 .box .icon h4:before {
+  left: initial;
+  right: 100%;
+  background: #9c27b0;
+}
+
+.main-area .contact-area .container1 .box .fa:hover~h3:before {
+  left: -100%;
+}
+
+.main-area .contact-area .container1 .box .fa:hover~h4:before {
+  left: initial;
+  right: -100%;
+}
+
+.main-area .contact-area .container1 .box .fa:hover {
+  color: blue;
+  transition: 1s;
+}
+
+/* contact area ends */
+
+/* main area ends */
+
+/* Change Selection Text Color When Highlighting */
+::-moz-selection {
+  background-color: green;
+  color: #fff;
+}
+
+::selection {
+  background-color: green;
+  color: #fff;
+}
