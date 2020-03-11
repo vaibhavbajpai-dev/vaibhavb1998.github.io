@@ -203,6 +203,7 @@ button:hover {
 
 .main-area .about-area .about-me-img {
   width: 80%;
+  height: auto;
   margin: 0;
 }
 
