@@ -1,110 +1,221 @@
-@media only screen and (max-width: 700px) {
+html {
+  font-size: 60%;
+  scroll-behavior: smooth;
+}
 
-  .header-area .main-menu .navbar,
-  .header-area .main-menu .navbar .navbar-brand {
-    padding: 2%;
-    margin: 0%;
-  }
+/* responsive navbar starts */
+.display-btn,
+.hide-btn {
+  transition: 0.4s;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
 
-  .banner-area .banner-msg-area {
-    margin: 0 auto !important;
-    text-align: center;
-  }
+.display-btn {
+  float: right;
+}
 
-  .banner-img,
-  .about-me-img {
-    height: 12rem !important;
-    width: 17rem !important;
-    margin: 0 auto;
-  }
+#toggle {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1;
+}
 
-  /* contact starts */
+@media screen and (max-width: 900px) {
 
-  .contact-area {
-    min-height: 100vh;
-    padding-top: 15vh;
-    font-family: 'Poppins', sans-serif;
-  }
-
-  .contact-area-heading {
-    color: #ffbd39cc;
-    font-size: 50px;
-    font-weight: 600;
-    text-transform: capitalize;
-    font-family: 'Poppins', sans-serif;
-    text-shadow: 5px 6px rgba(170, 170, 170, 0.219);
-    text-align: center;
-  }
-
-  .container1 {
-    width: 400px;
-    margin: 10rem auto;
-
-  }
-
-  .main-area .contact-area .container1 .box {
-    text-align: center;
-  }
-
-  .main-area .contact-area .container1 .box .icon .fa {
-    font-size: 30px;
-    cursor: pointer;
-  }
-
-  .main-area .contact-area .container1 .box .icon h4,
-  .main-area .contact-area .container1 .box .icon h3 {
-    position: relative;
-    overflow: hidden;
-    font-weight: 400;
-    margin: 0;
-    padding: 2px 5px;
-    font-size: 12px;
-    transition-delay: 0.3333s;
-    color: transparent;
-  }
-
-  .main-area .contact-area .container1 .box .fa:hover~h4,
-  .main-area .contact-area .container1 .box .fa:hover~h3 {
+  .display-btn,
+  .hide-btn {
+    display: block;
     color: white;
   }
 
-
-  .main-area .contact-area .container1 .box .icon h4 {
-    font-weight: 600;
-    margin: 5px 0;
-    font-size: 20px;
-  }
-
-  .main-area .contact-area .container1 .box .icon h4:before,
-  .main-area .contact-area .container1 .box .icon h3:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 100%;
+  ul {
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
     width: 100%;
-    height: 100%;
-    background: #00bcd4;
-    transition: 1s;
-  }
-
-  .main-area .contact-area .container1 .box .icon h4:before {
-    left: initial;
-    right: 100%;
-    background: #9c27b0;
-  }
-
-  .main-area .contact-area .container1 .box .fa:hover~h3:before {
+    height: 100vh;
+    background: black;
     left: -100%;
+    top: 0;
+    align-items: center;
+    transition: 800ms;
   }
 
-  .main-area .contact-area .container1 .box .fa:hover~h4:before {
-    left: initial;
-    right: -100%;
+  .nav-links li a,
+  button {
+    font-size: 4rem;
   }
 
-  .main-area .contact-area .container1 .box .fa:hover {
-    color: blue;
-    transition: 1s;
+  button {
+    background-color: transparent;
+    color: #ccc;
+  }
+
+  button:hover {
+    color: #ffa807;
+    background-color: transparent;
+  }
+
+  .hide-btn {
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    font-size: 30px;
+  }
+
+  #toggle:checked~ul {
+    left: 0;
+  }
+}
+
+/* responsive navbar ends */
+
+
+@media only screen and (max-width: 1300px) {
+  .main-area .banner-area .line-1 {
+    font-size: 1.5rem;
+  }
+
+  .main-area .banner-area .line-2 {
+    font-size: 5rem;
+  }
+
+  .main-area .about-area .about-info-area .about-me-info {
+    font-size: 2.3rem;
+  }
+
+  .main-area .about-area .about-me-img-responsive {
+    width: 80%;
+    height: auto;
+    margin: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+
+
+  /* main section starts */
+
+  /* banner area starts */
+  .main-area .banner-area .banner-img {
+    display: none;
+  }
+
+  .main-area .banner-area .banner-msg-area {
+    padding: 0;
+    text-align: center;
+  }
+
+  .main-area .banner-area .line-1 {
+    font-size: 3rem;
+  }
+
+  .main-area .banner-area .line-2 {
+    font-size: 8.5rem;
+  }
+
+  .main-area .banner-area .line-3 {
+    font-size: 4rem;
+  }
+
+  /* banner area ends */
+
+  /* about-me area starts */
+
+  .about-me-img {
+    display: none;
+  }
+
+  .about-img-area-responsive {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .about-me-img-responsive {
+    display: flex;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  /* about-me area ends */
+
+
+  /* main section ends */
+
+}
+
+@media only screen and (max-width: 720px) {
+
+  .about-me-img-responsive {
+    width: 80%;
+  }
+
+  /* banner area starts */
+  .main-area .banner-area .line-1 {
+    font-size: 2rem;
+  }
+
+  .main-area .banner-area .line-2 {
+    font-size: 6rem;
+  }
+
+  .main-area .banner-area .line-3 {
+    font-size: 3rem;
+  }
+
+  .main-area .banner-area .banner-btn-area .resume-btn,
+  .main-area .banner-area .banner-btn-area .hire-me-btn {
+    font-size: 2.5rem;
+  }
+
+  /* banner area ends */
+
+  /* contact area starts */
+
+  .contact-area {
+    padding: 0;
+  }
+
+  .main-area .contact-area .flex-container {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-area .contact-area .social-section .small-msg {
+    margin-top: 20px;
+  }
+
+  .main-area .contact-area .flex-container .social-section {
+    width: 80%;
+  }
+
+  .main-area .contact-area .flex-container .social-section {
+    order: 3;
+  }
+
+  .main-area .contact-area .social-section .small-msg {
+    order: 2;
+  }
+
+  .main-area .contact-area .social-icons-section .social-icons img {
+    margin-right: 10px;
+  }
+
+  .main-area .contact-area .social-icons-section {
+    font-size: 1.6rem;
+  }
+
+  /* contact area endss */
+
+
+  .main-area .about-area .about-info-area .about-me-info {
+    font-size: 2rem;
   }
 
 }

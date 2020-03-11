@@ -7,258 +7,169 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Vaibhav Bajpai</title>
 
-  <!-- my css starts -->
+  <!-- my stylesheets starts -->
   <link rel="stylesheet" href="./css/styles.css">
-
-  <!-- bootstrap css starts -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-
-  <!-- responsive css starts -->
   <link rel="stylesheet" href="./css/responsive.css">
-
-  <!-- font awesome starts -->
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 </head>
 
 <body>
 
   <!-- header section starts -->
-  <header class="header-area">
-    <div class="main-menu">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="">vaibhav</a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <header>
+    <!-- <img class="logo" src="./img/" alt="Vaibhav Bajpai"> -->
+    <h1 class="logo">Vaibhav</h1>
+    <input type="checkbox" id="toggle">
+    <label for="toggle" class="display-btn">
+      <i class="fas fa-bars"></i>
+    </label>
 
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="mr-auto"></div>
-          <ul class="navbar-nav">
+    <ul class="nav-links">
+      <li><a href="#about-area">About</a></li>
+      <li><a href="#portfolio-area">Portfolio</a></li>
+      <!-- <li><a href="#skills-area">Skills</a></li> -->
+      <li><a class="cta" href="#contact-area"><button>Contact</button></a></li>
 
-            <li class="nav-item active">
-              <a class="nav-link" href="#banner-area">home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about-area">about</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills-area">skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact-area">contact</a>
-            </li>
+      <label for="toggle" class="hide-btn">
+        <i class="fas fa-times"></i>
+      </label>
+    </ul>
 
-          </ul>
-        </div>
-      </nav>
-    </div>
   </header>
   <!-- header section ends -->
 
   <!-- main section starts -->
-  <main class="main-area container">
-
+  <main class="main-area">
     <!-- banner section starts -->
     <div class="banner-area" id="banner-area">
-      <div class="row">
-        <div class="col-lg-6 col-sm-12 banner-msg-area">
-          <div class="line-1">hello!</div>
-          <div class="line-2"><span class="banner-highlighted-text">I'm</span> Vaibhav Bajpai</div>
-          <div class="line-3">Full Stack Developer</div>
-          <div class="banner-btn-area">
-            <a href="#contact-area"> <button type="button" class="hire-me-btn">hire me</button></a>
-            <a href="./resume/resume.pdf" target="_blank"><button type="button" class="resume-btn">resume</button></a>
-          </div>
+      <div class="banner-msg-area">
+        <div class="line-1">hello!</div>
+        <div class="line-2"><span class="banner-highlighted-text">I'm</span> Vaibhav Bajpai</div>
+        <div class="line-3">Full Stack Developer</div>
+        <div class="banner-btn-area">
+          <a href="#contact-area"> <button type="button" class="hire-me-btn">hire me</button></a>
+          <a href="./resume/resume.pdf" target="_blank"><button type="button" class="resume-btn">resume</button></a>
         </div>
-        <div class="col-lg-6 col-sm-12 banner-img-area">
-          <img src="./img/banner-img.svg" alt="banner-img" class="banner-img">
-        </div>
+      </div>
+      <div class="banner-img-area">
+        <img src="./img/banner-img.svg" alt="banner-img" class="banner-img">
       </div>
     </div>
     <!-- banner section ends -->
 
     <!-- about section starts -->
+    <div class="about-area" id="about-area"> -->
 
-    <div class="about-area container" id="about-area">
-      <div class="row">
-        <div class="col-lg-6 col-sm-12 about-img-area">
-          <img src="./img/about-me-img.svg" alt="about-me-img" class="about-me-img">
+      <div class="about-info-area">
+        <div class="about-me-heading">
+          about me
         </div>
-        <div class="col-lg-6 col-sm-12 about-info-area">
-          <div class="about-me-heading">
-            about me
-          </div>
-          <div class="about-me-info">
-            <div class="line-1 mt-4">
-              I am an <span class="about-me-highlighted-text"> Full Stack Developer</span> and <span
-                class="about-me-highlighted-text">UI/UX</span> enthusiast.
-            </div>
-
-            <div class="line-2 mt-3">
-              I have a passion for designing beautiful and functional user experience.
-            </div>
-
-            <div class="line-3 mt-3">
-              Feel free to <a href="#contact-area">contact me</a>.
-            </div>
-
-          </div>
+        <div class="about-img-area-responsive">
+          <img src="./img/about-me-img.svg" alt="about-me-img" class="about-me-img-responsive">
         </div>
+        <div class="about-me-info">
+          <div class="line-1">
+            I am an <span class="about-me-highlighted-text"> Full Stack Developer</span> and <span
+              class="about-me-highlighted-text">UI/UX</span> enthusiast.
+          </div>
+
+          <div class="line-2">
+            I have a passion for designing beautiful and functional user experience.
+          </div>
+
+          <div class="line-3">
+            Feel free to <a href="#contact-area">contact me</a>.
+          </div>
+
+        </div>
+      </div>
+      <div class="about-img-area">
+        <img src="./img/about-me-img.svg" alt="about-me-img" class="about-me-img">
       </div>
     </div>
     <!-- about section ends -->
 
-    <!-- resume section starts -->
-    <!-- <div class="resume-area container" id="resume-area">
-      <div class="resume-area-heading">
-        resume
+    <!-- portfolio section starts -->
+
+
+    <div class="portfolio-area" id="portfolio-area">
+      <div class="portfolio-heading">
+        Portfolio
       </div>
-    </div> -->
-    <!-- resume section ends -->
-
-    <!-- skills section starts -->
-    <div class="skills-area container" id="skills-area">
-      <div class="skills-area-heading">
-        my skills
-      </div>
-
-      <div class="row mt-5 justify-content-center">
-
-        <div class="col-lg-6 col-sm-12">
-          <div class="skills-bar-heading">
-            HTML5
-          </div>
-          <div class="skills-bar-percent">
-            80%
-          </div>
-          <div class="skills-bar mt-2">
-            <div class="skills-bar-fill-1"></div>
-          </div>
+      <div class="portfolio-cards-section">
+        <div class="portfolio-cards">
+          <div class="work-info">URL Shortening Service</div>
+          <div class="visit-link"><a href="https://insta-url.herokuapp.com/" target="_blank">Visit Website</a></div>
         </div>
-        <div class="col-lg-6 col-sm-12">
-          <div class="skills-bar-heading">
-            CSS3
-          </div>
-          <div class="skills-bar-percent">
-            70%
-          </div>
-          <div class="skills-bar mt-2">
-            <div class="skills-bar-fill-2"></div>
-          </div>
+        <div class="portfolio-cards">
+          <div class="work-info">Sliding Puzzle Game.</div>
+          <div class="visit-link"><a href="https://vaibhavb1998.github.io/project/index.html" target="_blank">Visit
+              Website</a></div>
         </div>
-
-      </div>
-
-      <div class="row mt-5 justify-content-center">
-
-        <div class="col-lg-6 col-sm-12">
-          <div class="skills-bar-heading">
-            Python
-          </div>
-          <div class="skills-bar-percent">
-            80%
-          </div>
-          <div class="skills-bar mt-2">
-            <div class="skills-bar-fill-3"></div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-sm-12">
-          <div class="skills-bar-heading">
-            JavaScript
-          </div>
-          <div class="skills-bar-percent">
-            60%
-          </div>
-          <div class="skills-bar mt-2">
-            <div class="skills-bar-fill-4"></div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row mt-5">
-
-        <div class="col-lg-6 col-sm-12">
-          <div class="skills-bar-heading">
-            NodeJS
-          </div>
-          <div class="skills-bar-percent">
-            50%
-          </div>
-          <div class="skills-bar mt-2">
-            <div class="skills-bar-fill-5"></div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-sm-12">
-          <div class="skills-bar-heading">
-            jQuery
-          </div>
-          <div class="skills-bar-percent">
-            50%
-          </div>
-          <div class="skills-bar mt-2">
-            <div class="skills-bar-fill-6"></div>
-          </div>
-        </div>
-
       </div>
     </div>
+    <!-- portfolio section ends -->
+
+    <!-- skills section starts -->
+    <!-- <div class="skills-area" id="skills-area">
+      <div class="skills-heading">
+        Skills
+      </div>
+      <div class="skills-cards-section">
+        <div class="skills-card"></div>
+        <div class="skills-card"></div>
+        <div class="skills-card"></div>
+        <div class="skills-card"></div>
+        <div class="skills-card"></div>
+        <div class="skills-card"></div>
+      </div>
+    </div> -->
     <!-- skills section ends -->
 
     <!-- contact section starts -->
-
     <div class="contact-area" id="contact-area">
-      <div class="contact-area-heading">
-        Contact
+      <div class="contact-heading">
+        Contact Me
       </div>
-      <div class="container1">
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="box">
-              <div class="icon">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <h4>Address</h4>
-                <h3>Bengaluru, 560013, India</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12">
-            <div class="box">
-              <div class="icon">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-
-                <h4>Mobile</h4>
-                <h3>+91 8660 666 250</h3>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-12">
-            <div class="box">
-              <div class="icon">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-
-                <h4>Email</h4>
-                <h3>vaibhavbajpai12@gmail.com</h3>
-              </div>
-            </div>
+      <div class="flex-container">
+        <div class="social-section">
+          <div class="small-msg">
+            Feel free to talk to me. I am here to help and answer any question you might have. I look forward to hearing
+            from you.
+          </div><br><br><br><br>
+          <div class="social-icons-section">
+            <div class="social-icons">
+              <img src="./img/gmail.png" alt="" height="50">
+              <a href="mailto:vaibhavbajpai12@gmail.com?Subject=Hello%20again" target="_top"><span>Send me an
+                  Email</span></a>
+            </div><br>
+            <div class="social-icons">
+              <img src="./img/github.png" alt="" height="50">
+              <a href="https://github.com/vaibhavb1998" target="blank"><span> Fork me on Github</span></a>
+            </div><br>
+            <div class="social-icons">
+              <img src="./img/linkedin.png" alt="" height="50">
+              <a href="https://in.linkedin.com/in/vaibhav-bajpai-a53a69174" target="_blank"><span> Connect with me on
+                  Linkedin</span></a>
+            </div><br>
           </div>
         </div>
+        <div class="my-profile-pic">
+          <img class="my-pic" src="./img/vaibhav.jpeg" alt="" height="400" width="300">
+        </div>
       </div>
+
     </div>
     <!-- contact section ends -->
   </main>
   <!-- main section ends -->
 
   <!-- footer section starts -->
-  <footer></footer>
+  <!-- <footer>
+    &copy; Vaibhav Bajpai
+  </footer> -->
   <!-- footer section ends -->
 
-
-  <!--  Jquery js file  -->
-  <script src="./js/jquery.3.4.1.js"></script>
-
-  <!--  custom js file  -->
   <script src="./js/script.js"></script>
 </body>
 
