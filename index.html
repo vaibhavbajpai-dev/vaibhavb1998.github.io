@@ -1,117 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vaibhav Bajpai</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Vaibhav Bajpai</title>
+    <!-- my stylesheets starts -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
 
-  <!-- my stylesheets starts -->
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/responsive.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-</head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MG83QJJ");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
 
-<body>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MG83QJJ"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-  <!-- header section starts -->
-  <header>
-    <!-- <img class="logo" src="./img/" alt="Vaibhav Bajpai"> -->
-    <h1 class="logo">Vaibhav</h1>
-    <input type="checkbox" id="toggle">
-    <label for="toggle" class="display-btn">
-      <i class="fas fa-bars"></i>
-    </label>
-
-    <ul class="nav-links">
-      <li><a href="#about-area">About</a></li>
-      <li><a href="#portfolio-area">Portfolio</a></li>
-      <!-- <li><a href="#skills-area">Skills</a></li> -->
-      <li><a class="cta" href="#contact-area"><button>Contact</button></a></li>
-
-      <label for="toggle" class="hide-btn">
-        <i class="fas fa-times"></i>
+    <!-- header section starts -->
+    <header>
+      <!-- <img class="logo" src="./img/" alt="Vaibhav Bajpai"> -->
+      <h1 class="logo">Vaibhav</h1>
+      <input type="checkbox" id="toggle" />
+      <label for="toggle" class="display-btn">
+        <i class="fas fa-bars"></i>
       </label>
-    </ul>
 
-  </header>
-  <!-- header section ends -->
+      <ul class="nav-links">
+        <li><a href="#about-area">About</a></li>
+        <li><a href="#portfolio-area">Portfolio</a></li>
+        <!-- <li><a href="#skills-area">Skills</a></li> -->
+        <li>
+          <a class="cta" href="#contact-area"><button>Contact</button></a>
+        </li>
 
-  <!-- main section starts -->
-  <main class="main-area">
-    <!-- banner section starts -->
-    <div class="banner-area" id="banner-area">
-      <div class="banner-msg-area">
-        <div class="line-1">hello!</div>
-        <div class="line-2"><span class="banner-highlighted-text">I'm</span> Vaibhav Bajpai</div>
-        <div class="line-3">Full Stack Developer</div>
-        <div class="banner-btn-area">
-          <a href="#contact-area"> <button type="button" class="hire-me-btn">hire me</button></a>
-          <a href="./resume/resume.pdf" target="_blank"><button type="button" class="resume-btn">resume</button></a>
-        </div>
-      </div>
-      <div class="banner-img-area">
-        <img src="./img/banner-img.svg" alt="banner-img" class="banner-img">
-      </div>
-    </div>
-    <!-- banner section ends -->
+        <label for="toggle" class="hide-btn">
+          <i class="fas fa-times"></i>
+        </label>
+      </ul>
+    </header>
+    <!-- header section ends -->
 
-    <!-- about section starts -->
-    <div class="about-area" id="about-area"> -->
-
-      <div class="about-info-area">
-        <div class="about-me-heading">
-          about me
-        </div>
-        <div class="about-img-area-responsive">
-          <img src="./img/about-me-img.svg" alt="about-me-img" class="about-me-img-responsive">
-        </div>
-        <div class="about-me-info">
-          <div class="line-1">
-            I am an <span class="about-me-highlighted-text"> Full Stack Developer</span> and <span
-              class="about-me-highlighted-text">UI/UX</span> enthusiast.
-          </div>
-
+    <!-- main section starts -->
+    <main class="main-area">
+      <!-- banner section starts -->
+      <div class="banner-area" id="banner-area">
+        <div class="banner-msg-area">
+          <div class="line-1">hello!</div>
           <div class="line-2">
-            I have a passion for designing beautiful and functional user experience.
+            <span class="banner-highlighted-text">I'm</span> Vaibhav Bajpai
           </div>
-
-          <div class="line-3">
-            Feel free to <a href="#contact-area">contact me</a>.
+          <div class="line-3">Full Stack Developer</div>
+          <div class="banner-btn-area">
+            <a href="#contact-area">
+              <button type="button" class="hire-me-btn">hire me</button></a
+            >
+            <a href="./resume/resume.pdf" target="_blank"
+              ><button type="button" class="resume-btn">resume</button></a
+            >
           </div>
-
+        </div>
+        <div class="banner-img-area">
+          <img src="./img/banner-img.svg" alt="banner-img" class="banner-img" />
         </div>
       </div>
-      <div class="about-img-area">
-        <img src="./img/about-me-img.svg" alt="about-me-img" class="about-me-img">
-      </div>
-    </div>
-    <!-- about section ends -->
+      <!-- banner section ends -->
 
-    <!-- portfolio section starts -->
+      <!-- about section starts -->
+      <div class="about-area" id="about-area">
+        -->
 
+        <div class="about-info-area">
+          <div class="about-me-heading">about me</div>
+          <div class="about-img-area-responsive">
+            <img
+              src="./img/about-me-img.svg"
+              alt="about-me-img"
+              class="about-me-img-responsive"
+            />
+          </div>
+          <div class="about-me-info">
+            <div class="line-1">
+              I am an
+              <span class="about-me-highlighted-text">
+                Full Stack Developer</span
+              >
+              and
+              <span class="about-me-highlighted-text">UI/UX</span> enthusiast.
+            </div>
 
-    <div class="portfolio-area" id="portfolio-area">
-      <div class="portfolio-heading">
-        Portfolio
-      </div>
-      <div class="portfolio-cards-section">
-        <div class="portfolio-cards">
-          <div class="work-info">URL Shortening Service</div>
-          <div class="visit-link"><a href="https://insta-url.herokuapp.com/" target="_blank">Visit Website</a></div>
+            <div class="line-2">
+              I have a passion for designing beautiful and functional user
+              experience.
+            </div>
+
+            <div class="line-3">
+              Feel free to <a href="#contact-area">contact me</a>.
+            </div>
+          </div>
         </div>
-        <div class="portfolio-cards">
-          <div class="work-info">Sliding Puzzle Game.</div>
-          <div class="visit-link"><a href="https://vaibhavb1998.github.io/project/index.html" target="_blank">Visit
-              Website</a></div>
+        <div class="about-img-area">
+          <img
+            src="./img/about-me-img.svg"
+            alt="about-me-img"
+            class="about-me-img"
+          />
         </div>
       </div>
-    </div>
-    <!-- portfolio section ends -->
+      <!-- about section ends -->
 
-    <!-- skills section starts -->
-    <!-- <div class="skills-area" id="skills-area">
+      <!-- portfolio section starts -->
+
+      <div class="portfolio-area" id="portfolio-area">
+        <div class="portfolio-heading">Portfolio</div>
+        <div class="portfolio-cards-section">
+          <div class="portfolio-cards">
+            <div class="work-info">URL Shortening Service</div>
+            <div class="visit-link">
+              <a href="https://insta-url.herokuapp.com/" target="_blank"
+                >Visit Website</a
+              >
+            </div>
+          </div>
+          <div class="portfolio-cards">
+            <div class="work-info">Sliding Puzzle Game.</div>
+            <div class="visit-link">
+              <a
+                href="https://vaibhavb1998.github.io/project/index.html"
+                target="_blank"
+                >Visit Website</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- portfolio section ends -->
+
+      <!-- skills section starts -->
+      <!-- <div class="skills-area" id="skills-area">
       <div class="skills-heading">
         Skills
       </div>
@@ -124,53 +175,67 @@
         <div class="skills-card"></div>
       </div>
     </div> -->
-    <!-- skills section ends -->
+      <!-- skills section ends -->
 
-    <!-- contact section starts -->
-    <div class="contact-area" id="contact-area">
-      <div class="contact-heading">
-        Contact Me
-      </div>
-      <div class="flex-container">
-        <div class="social-section">
-          <div class="small-msg">
-            Feel free to talk to me. I am here to help and answer any question you might have. I look forward to hearing
-            from you.
-          </div><br><br><br><br>
-          <div class="social-icons-section">
-            <div class="social-icons">
-              <img src="./img/gmail.png" alt="" height="50">
-              <a href="mailto:vaibhavbajpai12@gmail.com?Subject=Hello%20again" target="_top"><span>Send me an
-                  Email</span></a>
-            </div><br>
-            <div class="social-icons">
-              <img src="./img/github.png" alt="" height="50">
-              <a href="https://github.com/vaibhavb1998" target="blank"><span> Fork me on Github</span></a>
-            </div><br>
-            <div class="social-icons">
-              <img src="./img/linkedin.png" alt="" height="50">
-              <a href="https://in.linkedin.com/in/vaibhav-bajpai-a53a69174" target="_blank"><span> Connect with me on
-                  Linkedin</span></a>
-            </div><br>
+      <!-- contact section starts -->
+      <div class="contact-area" id="contact-area">
+        <div class="contact-heading">Contact Me</div>
+        <div class="flex-container">
+          <div class="social-section">
+            <div class="small-msg">
+              Feel free to talk to me. I am here to help and answer any question
+              you might have. I look forward to hearing from you.
+            </div>
+            <br /><br /><br /><br />
+            <div class="social-icons-section">
+              <div class="social-icons">
+                <img src="./img/gmail.png" alt="" height="50" />
+                <a
+                  href="mailto:vaibhavbajpai12@gmail.com?Subject=Hello%20again"
+                  target="_top"
+                  ><span>Send me an Email</span></a
+                >
+              </div>
+              <br />
+              <div class="social-icons">
+                <img src="./img/github.png" alt="" height="50" />
+                <a href="https://github.com/vaibhavb1998" target="blank"
+                  ><span> Fork me on Github</span></a
+                >
+              </div>
+              <br />
+              <div class="social-icons">
+                <img src="./img/linkedin.png" alt="" height="50" />
+                <a
+                  href="https://in.linkedin.com/in/vaibhav-bajpai-a53a69174"
+                  target="_blank"
+                  ><span> Connect with me on Linkedin</span></a
+                >
+              </div>
+              <br />
+            </div>
+          </div>
+          <div class="my-profile-pic">
+            <img
+              class="my-pic"
+              src="./img/vaibhav.png"
+              alt=""
+              height="400"
+              width="300"
+            />
           </div>
         </div>
-        <div class="my-profile-pic">
-          <img class="my-pic" src="./img/vaibhav.png" alt="" height="400" width="300">
-        </div>
       </div>
+      <!-- contact section ends -->
+    </main>
+    <!-- main section ends -->
 
-    </div>
-    <!-- contact section ends -->
-  </main>
-  <!-- main section ends -->
-
-  <!-- footer section starts -->
-  <!-- <footer>
+    <!-- footer section starts -->
+    <!-- <footer>
     &copy; Vaibhav Bajpai
   </footer> -->
-  <!-- footer section ends -->
+    <!-- footer section ends -->
 
-  <script src="./js/script.js"></script>
-</body>
-
+    <script src="./js/script.js"></script>
+  </body>
 </html>
