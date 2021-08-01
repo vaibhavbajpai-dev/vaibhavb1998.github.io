@@ -1,51 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NUBLE - Vaibhav Bajpai</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>NUBLE - Vaibhav Bajpai</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="stylesheet" href="./css/responsive.css">
-</head>
+  <body onkeydown="keyPressed(event)">
+    <header>
+      <h1>NUBLE</h1>
+    </header>
 
-<body onkeydown="keyPressed(event)">
-  <header>
-    <h1>
-      NUBLE
-    </h1>
-  </header>
-
-  <main>
-    <section id="stats-section">
-      <div class="stats">
-        <div>
-          <span>moves : </span>
-          <span id="moves-count">0</span>
+    <main>
+      <section id="stats-section">
+        <div class="stats">
+          <div>
+            <span>moves : </span>
+            <span id="moves-count">0</span>
+          </div>
+          <div>
+            <span>time : </span>
+            <span id="timer">0</span>
+            <span style="text-transform: lowercase">sec</span>
+          </div>
         </div>
-        <div>
-          <span>time : </span>
-          <span id="timer">0</span>
-          <span style="text-transform: lowercase;">sec</span>
-        </div>
-      </div>
-      <div class="game-btn">
-        <button style="background: #DC7401; color: white; text-transform: uppercase;" onclick="undo();">undo</button>
-        <button style="background: #6FA921; color: white; text-transform: uppercase;"
-          onclick="window.location.reload();">new game</button>
-        <button style="background: #C1044B; color: white; text-transform: uppercase;" class="disabled">auto
-          solve
-        </button>
-        <a href="./rules/rules.html" target="_blank">
-          <button style="background: rgb(4, 7, 193); color: white; text-transform: uppercase;">Instructions
+        <div class="game-btn" style="width: 140px">
+          <button
+            style="background: #dc7401; color: white; text-transform: uppercase"
+            onclick="undo();"
+          >
+            undo
           </button>
-        </a>
-      </div>
-    </section>
+          <button
+            style="background: #6fa921; color: white; text-transform: uppercase"
+            onclick="window.location.reload();"
+          >
+            new game
+          </button>
+          <!-- <button
+            style="background: #c1044b; color: white; text-transform: uppercase"
+            class="disabled"
+          >
+            auto solve
+          </button> -->
+          <a href="./rules/rules.html" target="_blank">
+            <button
+              style="
+                background: rgb(4, 7, 193);
+                color: white;
+                text-transform: uppercase;
+              "
+            >
+              Instructions
+            </button>
+          </a>
+        </div>
+      </section>
 
-    <section id="playground">
-      <!-- <div class="play-area-easy">
+      <section id="playground">
+        <!-- <div class="play-area-easy">
         <div class="box">
           <div class="row1">
             <div class="box-cells"></div>
@@ -64,52 +80,51 @@
           </div>
         </div>
       </div> -->
-      <div class="play-area-medium">
-        <div class="box">
-          <div class="row1">
-            <div class="box-cells"></div>
-            <div class="box-cells"></div>
-            <div class="box-cells"></div>
-            <div class="box-cells"></div>
-          </div>
-          <div class="row2">
-            <div class="box-cells"></div>
-            <div class="box-cells"></div>
-            <div class="box-cells"></div>
-            <div class="box-cells"></div>
-          </div>
-          <div class="row3">
-            <div class="box-cells"></div>
-            <div class="box-cells"></div>
-            <div class="box-cells"></div>
-            <div class="box-cells"></div>
-          </div>
-          <div class="row4">
-            <div class="box-cells"></div>
-            <div class="box-cells"></div>
-            <div class="box-cells"></div>
-            <div class="box-cells"></div>
+        <div class="play-area-medium">
+          <div class="box">
+            <div class="row1">
+              <div class="box-cells"></div>
+              <div class="box-cells"></div>
+              <div class="box-cells"></div>
+              <div class="box-cells"></div>
+            </div>
+            <div class="row2">
+              <div class="box-cells"></div>
+              <div class="box-cells"></div>
+              <div class="box-cells"></div>
+              <div class="box-cells"></div>
+            </div>
+            <div class="row3">
+              <div class="box-cells"></div>
+              <div class="box-cells"></div>
+              <div class="box-cells"></div>
+              <div class="box-cells"></div>
+            </div>
+            <div class="row4">
+              <div class="box-cells"></div>
+              <div class="box-cells"></div>
+              <div class="box-cells"></div>
+              <div class="box-cells"></div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="moves">
-      <h3>Your Moves</h3>
-      <div class="moves-list" id="moves-list">
-        <ol id="list"></ol>
-      </div>
-    </section>
-  </main>
+      <section id="moves">
+        <h3>Your Moves</h3>
+        <div class="moves-list" id="moves-list">
+          <ol id="list"></ol>
+        </div>
+      </section>
+    </main>
 
-  <footer>
+    <!-- <footer>
     <h3>Difficulty Level</h3>
     <div class="choose-difficulty">
       <button class="disabled" disabled>Easy</button>
       <button class="disabled" style="background: white;" disabled>Medium</button>
     </div>
-  </footer>
-  <script src="./js/script.js"></script>
-</body>
-
+  </footer> -->
+    <script src="./js/script.js"></script>
+  </body>
 </html>

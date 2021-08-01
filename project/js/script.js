@@ -1,17 +1,17 @@
 // global variables declaration here
-var tile_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, ' '];
-var random_tile_list = [];
+let tile_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, ' '];
+let random_tile_list = [];
 
-var num_tiles = 0;
-var index_of_empty_tile = 0;
-var index_of_exchange_tile = 0;
+let num_tiles = 0;
+let index_of_empty_tile = 0;
+let index_of_exchange_tile = 0;
 
-var moves = -1;
-var tile = 0;
+let moves = -1;
+let tile = 0;
 
-var x = 0, y = 0;
-var flag = 0;
-var ol = document.getElementById("list");
+let x = 0, y = 0;
+let flag = 0;
+let ol = document.getElementById("list");
 
 
 // initializing the playArea
@@ -86,7 +86,7 @@ function updatePlayArea() {
   }
 
   // creating moves list
-  var li = document.createElement("li");
+  let li = document.createElement("li");
   if (random_tile_list[index_of_empty_tile] != ' ') {
     li.appendChild(document.createTextNode("Tile " + random_tile_list[index_of_empty_tile] + ' to ' + x + ',' + y));
 
@@ -113,7 +113,7 @@ function updatePlayArea() {
   }
 
   // scroll to bottom of div
-  var objDiv = document.getElementById("moves-list");
+  let objDiv = document.getElementById("moves-list");
   objDiv.scrollTop = objDiv.scrollHeight;
 
   reviewWin();
@@ -220,10 +220,10 @@ function undo() {
       moves = -1;
     }
 
-    var list = document.getElementById("list");
-    var listItems = list.getElementsByTagName("li");
+    let list = document.getElementById("list");
+    let listItems = list.getElementsByTagName("li");
 
-    var last = listItems[listItems.length - 1];
+    let last = listItems[listItems.length - 1];
     list.removeChild(last);
 
     updatePlayArea();
@@ -231,7 +231,7 @@ function undo() {
 }
 
 function reviewWin() {
-  var a = 1;
+  let a = 1;
   for (k = 0; k < 14; k++) {
     if (tile_list[k] != k + 1) {
       a = 0;
@@ -245,13 +245,11 @@ function reviewWin() {
 init();
 updatePlayArea();
 
-
 //script for timer starts
-//script for timer starts
-var fired = false;
-var timer = document.getElementById("timer");
+let fired = false;
+let timer = document.getElementById("timer");
 
-var playerObj = {
+let playerObj = {
   elapsedTime: -1,
   update: function () {
     playerObj.elapsedTime += 1;
@@ -264,7 +262,7 @@ var playerObj = {
 };
 
 document.onkeydown = function (e) {
-  var w = e.keyCode == '38',
+  let w = e.keyCode == '38',
     a = e.keyCode == '40',
     s = e.keyCode == '37',
     d = e.keyCode == '39';
@@ -276,10 +274,7 @@ document.onkeydown = function (e) {
   }
 };
 //script for timer ends
-//script for timer ends
 
 // script for selecting difficulty level starts
-// script for selecting difficulty level starts
 
-// script for selecting difficulty level ends
 // script for selecting difficulty level ends

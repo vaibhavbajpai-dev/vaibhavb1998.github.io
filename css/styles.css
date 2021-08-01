@@ -385,7 +385,8 @@ button:hover {
 }
 
 .main-area .contact-area .flex-container .social-section {
-  width: 55%;
+  width: 100%;
+  /* width: 55%; */
 }
 
 .main-area .contact-area .social-section .small-msg {
